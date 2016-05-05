@@ -60,8 +60,8 @@ var svg = d3.select("body")
         .attr("transform", 
               "translate(" + margin.left + "," + margin.top + ")");
 
-// Get the data
-d3.csv("kau91.github.io/data.csv", function(error, data) {
+// Get the data git
+d3.csv("https://github.com/kau91/kau91.github.io/data.csv", function(error, data) {
     data.forEach(function(d) {
         d.date = parseDate(d.date);
         d.close = +d.close;
